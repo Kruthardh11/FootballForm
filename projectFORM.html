@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <script defer src="FORM.js"></script>
+<head>
+    <link rel="stylesheet" type="text/css" href="FORM.css">
+    <title>Survey</title>
+</head>
+
+<body>
+    <div id="error" >
+    <img width="420px" class="lewa" src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-04/Robert%20Lewandowski%20Bayern%20Munich%20030822.jpg?itok=PlQBgpy4">
+    <img width="420px"  class="lewa" style="padding-left: 130px; padding-right: 115px;" src="https://bvbbuzz.com/wp-content/uploads/getty-images/2017/07/1366324828.jpeg">
+    <img width="420px"  class="lewa" style="margin-left: 0px;" src="https://resources.premierleague.com/photos/2019/11/20/081c819f-d815-4a01-953c-1cbfe4c48908/Ozil.jpg?width=930&height=620">
+    <button class="lewabtn" onclick="newTab()" style="font-family:'DynaPuff', curisve;background-color:rgba(241, 11, 11,1)">Click for more on Lewa</button>
+    <button id="Marco" onclick="newTab2()" style="font-family: 'DynaPuff',cursive; background-color:rgb(238, 219, 10); margin-left: 380px;">Click for more on Reus</button> 
+    <button id="Ozil" onclick="newTab3()" style="font-family: 'DynaPuff',cursive; background-color:rgb(200, 98, 98); margin-left: 370px;">Click for more on Ozil</button> 
+    </div>
+    <form  method="GET">
+    <div class="survey">
+        <head3>Survey form</head3>
+    </div>
+    <div class="body">
+       
+        <br>
+        <label for="name" style="margin-left: 125px; margin-top: 100px;">Name :</label>
+        <input id="name" type="text" name="name" style="margin-left: 30px;"><br>
+        <br>
+        <label for="age" style="margin-left: 125px;"> Age :</label>
+        <input id="age" type="number" name="age" style="margin-left: 45px;"><br>
+        <br>
+        <label for="YesNo" style="margin-left: 125px;">Do you watch Football?</label>
+        <input id="YesNo" type="radio" name="YesNo" >
+        <label for="YesNo"> Yes </label><br>
+        <input id="YesNo" type="radio" name="YesNo" style="margin-left: 328px;">
+        <label for="YesNo" > No </label><br>
+        <br>
+        <label for="whatLeague" style="margin-left: 150px;"> What Leagues do you watch? </label><br>
+        <input type="checkbox" id="Premier league" name="Premier league" style="margin-left: 250px;">
+        <label for="Premier league"> Premier league</label><br>
+        <input type="checkbox" id="Bundesliga" name="Bundesliga" style="margin-left: 250px;">
+        <label for="Bundesliga"> Bundesliga</label><br>
+        <input type="checkbox" id="La Liga" name="La Liga" style="margin-left: 250px;">
+        <label for="La Liga"> La Liga</label><br>
+        <input type="checkbox" id="Serie A" name="Serie A" style="margin-left: 250px;">
+        <label for="Serie A"> Serie A</label><br>
+        <input type="checkbox" id="Other" name="Other" style="margin-left: 250px;">
+        <label for="Other">Other</label><br>
+
+    <br>
+    <div style="display:inline-block;">
+        <label for="q1" style="margin-left: 120px;">What clubs do you support?</label><input type="text" name="q1"  id="club1" style="margin-left: 380px;" placeholder="Bayern Munich"><br>
+        <input type="text" name="q1"  id="club2" style="margin-left: 380px;" placeholder="Borussia Dortmund"><br>
+        <input type="text" name="q1"  id="club3" style="margin-left: 380px;" placeholder="Arsenal"><br>
+        <button style="margin-left: 380px;" onclick="clubcheck()" type="button" >Confirm</button>
+        <p id="check" style="margin-left: 380px; background-color:rgb(248, 228, 11);"></p>
+    </div>
+    <br>
+        <label for="q2" style="margin-left: 125px;">What country is your favorite this FiFa World Cup?</label><br>
+        <input type="textarea" name="q2" id="q2" style="margin-left: 250px;"><br>
+    <br>
+        <label for="favplayer" id="favplayer" style="margin-left: 125px;"> Who is your favorite player?</label> <br>
+        <br> 
+        
+        <button class="btn1" type="button" onclick='document.getElementById("image").src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/xyge85zjlddci4jyybf8/lionel-messi"' style="margin-left: 250px;">B1</button> <label style="margin-left: 20px; margin-right: 20px;">OR</label>
+        <button type="button" onclick="document.getElementById('image').src='https://e0.365dm.com/22/07/768x432/skysports-cristiano-ronaldo_5823297.jpg'" class="btn1" >B2</button>
+
+        <img id="image" src="https://e0.365dm.com/22/07/768x432/skysports-cristiano-ronaldo_5823297.jpg" style="width:400px; margin-left: 150px; margin-top: 20px;"><br>
+        <br>
+        <label id="favplayer"  style="margin-left:150px;">Enter your favorite player if not the above two.</label><br><br>
+        <textarea name="favplayer" rows="3" columns="1" style="margin-left: 250px;"></textarea>
+        <br><br><br>
+        <button  class="button" onclick="result()"><span> Submit</span> </button>
+        <p id="results">  
+
+        </p>
+    </div><br>
+</body>
+</html> 
